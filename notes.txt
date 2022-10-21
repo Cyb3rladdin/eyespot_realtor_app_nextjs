@@ -1,0 +1,33 @@
+**run 'npx create-next-app@latest ./' to create app
+
+**add a '.babelrc' file to the project and add the "presets" and "plugins" objects to it
+
+**run 'npm run dev' to start app
+  **to open app in browser use (ctrl + click) in the terminal where you see the url: http://localhost:3000
+
+**install dependencies:
+  'install @chakra-ui/react @emotion/react @emotion/style axios framer-motion millify nprogress react-horizontal-scrolling-menu react-icons'
+    **nprogress = progress loading bar
+
+**open the pages > api > index.js file and delete all code inside the outermost <div>
+
+**create a utils folder in the root that will hold function we use throught the project
+  create a fetchApi.js file and using axios paste headers required from RapidApi
+
+**add the ChakraProvider import to the _app.js file in order for our chakra ui components to work properly
+
+**within the utils folder create another file named filterData.js which will contain alot of data we will use throughout the app
+
+**within the pages folder create another folder named property, which will be used for each property listed
+  within the property folder create a dynamic file by enclosing the name in sqaure brackets [id].js, which will allow dynamic id, (realtor.com/property/1234)
+
+**deploy application using vercel.com
+  create a new public repository on github
+  run the commands described on github from within project folder to push code to github:
+    git init
+    git add .
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin <insert github-project-link>
+    git push -u origin main
+  import to vercel, Deploy!!!
